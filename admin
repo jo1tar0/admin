@@ -1,0 +1,746 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SourceyRanker = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Circle = Instance.new("ImageLabel")
+local Frame_3 = Instance.new("Frame")
+local HDAdminLoader = Instance.new("TextButton")
+local Circle_2 = Instance.new("ImageLabel")
+local UICorner_3 = Instance.new("UICorner")
+local HDAboveOwner = Instance.new("TextButton")
+local Circle_3 = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+SourceyRanker.Name = "SourceyRanker"
+SourceyRanker.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SourceyRanker.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = SourceyRanker
+Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.5, -270, 0.5, -183)
+Frame.Size = UDim2.new(0, 540, 0, 367)
+
+UICorner.Parent = Frame
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Frame_2.Size = UDim2.new(0, 540, 0, 33)
+
+UICorner_2.Parent = Frame_2
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 200, 0, 33)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "SOURCEY'S HD LOADER|"
+TextLabel.TextColor3 = Color3.fromRGB(177, 177, 177)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Close.Name = "Close"
+Close.Parent = Frame_2
+Close.BackgroundColor3 = Color3.fromRGB(255, 49, 49)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.932341993, 0, 0.0909090936, 0)
+Close.Size = UDim2.new(0, 36, 0, 27)
+Close.Font = Enum.Font.GothamBlack
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(177, 177, 177)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Circle.Name = "Circle"
+Circle.Parent = game.StarterGui.SourceyRanker.Frame.Frame.Close.RippleEffect
+Circle.AnchorPoint = Vector2.new(0.5, 0.5)
+Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle.BackgroundTransparency = 1.000
+Circle.Position = UDim2.new(0.5, 0, 0.5, 0)
+Circle.ZIndex = 10
+Circle.Image = "rbxassetid://266543268"
+Circle.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Circle.ImageTransparency = 0.500
+
+Frame_3.Parent = Frame
+Frame_3.BackgroundColor3 = Color3.fromRGB(177, 177, 177)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.496296287, 0, 0.0899182558, 0)
+Frame_3.Size = UDim2.new(0, 4, 0, 334)
+
+HDAdminLoader.Name = "HD Admin Loader"
+HDAdminLoader.Parent = Frame
+HDAdminLoader.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+HDAdminLoader.BorderSizePixel = 0
+HDAdminLoader.Position = UDim2.new(0.0529778376, 0, 0.133748576, 0)
+HDAdminLoader.Size = UDim2.new(0, 159, 0, 74)
+HDAdminLoader.Font = Enum.Font.Gotham
+HDAdminLoader.Text = "INSERT HD ADMIN"
+HDAdminLoader.TextColor3 = Color3.fromRGB(177, 177, 177)
+HDAdminLoader.TextScaled = true
+HDAdminLoader.TextSize = 14.000
+HDAdminLoader.TextWrapped = true
+
+Circle_2.Name = "Circle"
+Circle_2.Parent = game.StarterGui.SourceyRanker.Frame.HD Admin Loader.RippleEffect
+Circle_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Circle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_2.BackgroundTransparency = 1.000
+Circle_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Circle_2.ZIndex = 10
+Circle_2.Image = "rbxassetid://266543268"
+Circle_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Circle_2.ImageTransparency = 0.500
+
+UICorner_3.Parent = HDAdminLoader
+
+HDAboveOwner.Name = "HD Above Owner"
+HDAboveOwner.Parent = Frame
+HDAboveOwner.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+HDAboveOwner.BorderSizePixel = 0
+HDAboveOwner.Position = UDim2.new(0.636562526, 0, 0.133585051, 0)
+HDAboveOwner.Size = UDim2.new(0, 159, 0, 74)
+HDAboveOwner.Font = Enum.Font.Gotham
+HDAboveOwner.Text = "HD Above Owner"
+HDAboveOwner.TextColor3 = Color3.fromRGB(177, 177, 177)
+HDAboveOwner.TextScaled = true
+HDAboveOwner.TextSize = 14.000
+HDAboveOwner.TextWrapped = true
+
+Circle_3.Name = "Circle"
+Circle_3.Parent = game.StarterGui.SourceyRanker.Frame.HD Above Owner.RippleEffect
+Circle_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Circle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Circle_3.BackgroundTransparency = 1.000
+Circle_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+Circle_3.ZIndex = 10
+Circle_3.Image = "rbxassetid://266543268"
+Circle_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Circle_3.ImageTransparency = 0.500
+
+UICorner_4.Parent = HDAboveOwner
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0203703642, 0, 0.874659419, 0)
+TextLabel_2.Size = UDim2.new(0, 211, 0, 69)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "Credits to Sourcey -  Scripting -  mif - Showcasing"
+TextLabel_2.TextColor3 = Color3.fromRGB(177, 177, 177)
+TextLabel_2.TextSize = 6.000
+
+-- Scripts:
+
+local function CQPDIE_fake_script() -- Frame.Dragify 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0.33
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(CQPDIE_fake_script)()
+local function NFHN_fake_script() -- Frame.Spawn 
+	local script = Instance.new('Script', Frame)
+
+	script.Parent.Parent.ResetOnSpawn = false
+end
+coroutine.wrap(NFHN_fake_script)()
+local function GEDV_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	script.Parent.Parent.TextLabel.Text = "Created By Sourcey :):"
+	wait(2)
+	script.Parent.Parent.TextLabel.Text = "|"
+	wait(.4)
+	script.Parent.Parent.TextLabel.Text = ""
+	wait(.4)
+	script.Parent.Parent.TextLabel.Text = "|"
+	wait(.4)
+	script.Parent.Parent.TextLabel.Text = ""
+	wait(.4)
+	script.Parent.Parent.TextLabel.Text = "S|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SO|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOU|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOUR|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURC|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCE|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'S|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'S H|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'S HD|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'S HD R|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'S HD RA|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'S HD RAN|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'S HD RANK|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'S HD RANKE|"
+	wait(.5)
+	script.Parent.Parent.TextLabel.Text = "SOURCEY'S HD RANKER|"
+	wait(4)
+end
+coroutine.wrap(GEDV_fake_script)()
+local function OZOISVT_fake_script() -- Close.Script 
+	local script = Instance.new('Script', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Frame.Visible = false
+	end)
+end
+coroutine.wrap(OZOISVT_fake_script)()
+local function PEQYXXL_fake_script() -- Close.RippleEffect 
+	local script = Instance.new('LocalScript', Close)
+
+	-- NOTE: Make sure the ZIndex of the button used is higher than other GUI parts behind
+	--       it, or this will not work correctly!
+	
+	
+	
+	
+	local RippleColor        = Color3.fromRGB(0, 0, 0) -- RGB Color of the ripple effect, you can change it.
+	local RippleTransparency = 0.61 ---------------------------- Max is 1, Min is 0
+	local PixelSize          = 2000 --------------------------- The Max size of the ripple in pixels
+	local TimeLength         = 1.333 ---------------------------- How long the ripple animation is
+	local FadeLength         = 0.6 ---------------------------- How long it takes for the ripple to fade out
+	
+	
+	
+	-- Do NOT change anything in the script if you want it to work, unless you know how to script...
+	
+	
+	
+	-- Script Below
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	local frame = script.Parent
+	local rgb = Color3.fromRGB
+	local ud2 = UDim2.new
+	repeat
+		wait()
+	until game.Players.LocalPlayer
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+	
+	frame.ClipsDescendants = true
+	frame.AutoButtonColor = false
+	
+	
+	function tweenInRipple(ripple)
+		spawn(function()
+			local TweenService = game:GetService("TweenService")
+			local Part = ripple
+			local Info = TweenInfo.new(
+				TimeLength,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.InOut,
+				0,
+				false,
+				0
+			)
+			local Goals = 
+			{
+				Size = ud2(0, PixelSize, 0, PixelSize);
+			}
+			local Tween = TweenService:Create(Part, Info, Goals)
+			Tween:Play()
+		end)
+	end
+	
+	function fadeOutRipple(ripple)
+		spawn(function()
+			local TweenService = game:GetService("TweenService")
+			local Part = ripple
+			local Info = TweenInfo.new(
+				FadeLength,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.InOut,
+				0,
+				false,
+				0
+			)
+			local Goals = 
+			{
+				ImageTransparency = 1;
+			}
+			local Tween = TweenService:Create(Part, Info, Goals)
+			Tween:Play()
+			wait(FadeLength + 0.1)
+			ripple:Destroy()
+		end)
+	end
+	
+	frame.MouseButton1Down:Connect(function()
+		local done = false
+		local ripple = script.Circle:Clone()
+		ripple.Parent = frame
+		ripple.ZIndex = frame.ZIndex + 1
+		ripple.ImageColor3 = RippleColor
+		ripple.ImageTransparency = RippleTransparency
+		tweenInRipple(ripple)
+		frame.MouseButton1Up:Connect(function()
+			if done == false then
+				done = true
+				fadeOutRipple(ripple)
+			end
+		end)
+		wait(4);
+		done = true;
+		fadeOutRipple(ripple) -- if it doesnt detect that it was unselected
+	end)
+end
+coroutine.wrap(PEQYXXL_fake_script)()
+local function VKUL_fake_script() -- HDAdminLoader.Script 
+	local script = Instance.new('Script', HDAdminLoader)
+
+	local Remote = script.Parent.RemoteEvent
+	
+	Remote.OnServerEvent:Connect(function(plr)
+		require(3606855832):Fire(plr.name)  
+	end)
+end
+coroutine.wrap(VKUL_fake_script)()
+local function ZJQOU_fake_script() -- HDAdminLoader.LocalScript 
+	local script = Instance.new('LocalScript', HDAdminLoader)
+
+	local Remote = script.Parent.RemoteEvent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Remote:FireServer()
+	end)
+end
+coroutine.wrap(ZJQOU_fake_script)()
+local function KWIFRSY_fake_script() -- HDAdminLoader.RippleEffect 
+	local script = Instance.new('LocalScript', HDAdminLoader)
+
+	-- NOTE: Make sure the ZIndex of the button used is higher than other GUI parts behind
+	--       it, or this will not work correctly!
+	
+	
+	
+	
+	local RippleColor        = Color3.fromRGB(0, 0, 0) -- RGB Color of the ripple effect, you can change it.
+	local RippleTransparency = 0.61 ---------------------------- Max is 1, Min is 0
+	local PixelSize          = 2000 --------------------------- The Max size of the ripple in pixels
+	local TimeLength         = 1.333 ---------------------------- How long the ripple animation is
+	local FadeLength         = 0.6 ---------------------------- How long it takes for the ripple to fade out
+	
+	
+	
+	-- Do NOT change anything in the script if you want it to work, unless you know how to script...
+	
+	
+	
+	-- Script Below
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	local frame = script.Parent
+	local rgb = Color3.fromRGB
+	local ud2 = UDim2.new
+	repeat
+		wait()
+	until game.Players.LocalPlayer
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+	
+	frame.ClipsDescendants = true
+	frame.AutoButtonColor = false
+	
+	
+	function tweenInRipple(ripple)
+		spawn(function()
+			local TweenService = game:GetService("TweenService")
+			local Part = ripple
+			local Info = TweenInfo.new(
+				TimeLength,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.InOut,
+				0,
+				false,
+				0
+			)
+			local Goals = 
+			{
+				Size = ud2(0, PixelSize, 0, PixelSize);
+			}
+			local Tween = TweenService:Create(Part, Info, Goals)
+			Tween:Play()
+		end)
+	end
+	
+	function fadeOutRipple(ripple)
+		spawn(function()
+			local TweenService = game:GetService("TweenService")
+			local Part = ripple
+			local Info = TweenInfo.new(
+				FadeLength,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.InOut,
+				0,
+				false,
+				0
+			)
+			local Goals = 
+			{
+				ImageTransparency = 1;
+			}
+			local Tween = TweenService:Create(Part, Info, Goals)
+			Tween:Play()
+			wait(FadeLength + 0.1)
+			ripple:Destroy()
+		end)
+	end
+	
+	frame.MouseButton1Down:Connect(function()
+		local done = false
+		local ripple = script.Circle:Clone()
+		ripple.Parent = frame
+		ripple.ZIndex = frame.ZIndex + 1
+		ripple.ImageColor3 = RippleColor
+		ripple.ImageTransparency = RippleTransparency
+		tweenInRipple(ripple)
+		frame.MouseButton1Up:Connect(function()
+			if done == false then
+				done = true
+				fadeOutRipple(ripple)
+			end
+		end)
+		wait(4);
+		done = true;
+		fadeOutRipple(ripple) -- if it doesnt detect that it was unselected
+	end)
+end
+coroutine.wrap(KWIFRSY_fake_script)()
+local function XWMFPRA_fake_script() -- HDAboveOwner.Script 
+	local script = Instance.new('Script', HDAboveOwner)
+
+	--eeee
+	local Remote = script.Parent.RemoteEvent
+	
+	Remote.OnServerEvent:Connect(function(plr)
+		local main = _G.HDAdminMain
+		main:GetModule("cf"):SetRank(game:GetService("Players")[plr.name], game.CreatorId, 999999999999999, "Perm")  
+	end)
+end
+coroutine.wrap(XWMFPRA_fake_script)()
+local function WNLEYM_fake_script() -- HDAboveOwner.LocalScript 
+	local script = Instance.new('LocalScript', HDAboveOwner)
+
+	local Remote = script.Parent.RemoteEvent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Remote:FireServer()
+	end)
+end
+coroutine.wrap(WNLEYM_fake_script)()
+local function CNTI_fake_script() -- HDAboveOwner.RippleEffect 
+	local script = Instance.new('LocalScript', HDAboveOwner)
+
+	-- NOTE: Make sure the ZIndex of the button used is higher than other GUI parts behind
+	--       it, or this will not work correctly!
+	
+	
+	
+	
+	local RippleColor        = Color3.fromRGB(0, 0, 0) -- RGB Color of the ripple effect, you can change it.
+	local RippleTransparency = 0.61 ---------------------------- Max is 1, Min is 0
+	local PixelSize          = 2000 --------------------------- The Max size of the ripple in pixels
+	local TimeLength         = 1.333 ---------------------------- How long the ripple animation is
+	local FadeLength         = 0.6 ---------------------------- How long it takes for the ripple to fade out
+	
+	
+	
+	-- Do NOT change anything in the script if you want it to work, unless you know how to script...
+	
+	
+	
+	-- Script Below
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	local frame = script.Parent
+	local rgb = Color3.fromRGB
+	local ud2 = UDim2.new
+	repeat
+		wait()
+	until game.Players.LocalPlayer
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+	
+	frame.ClipsDescendants = true
+	frame.AutoButtonColor = false
+	
+	
+	function tweenInRipple(ripple)
+		spawn(function()
+			local TweenService = game:GetService("TweenService")
+			local Part = ripple
+			local Info = TweenInfo.new(
+				TimeLength,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.InOut,
+				0,
+				false,
+				0
+			)
+			local Goals = 
+			{
+				Size = ud2(0, PixelSize, 0, PixelSize);
+			}
+			local Tween = TweenService:Create(Part, Info, Goals)
+			Tween:Play()
+		end)
+	end
+	
+	function fadeOutRipple(ripple)
+		spawn(function()
+			local TweenService = game:GetService("TweenService")
+			local Part = ripple
+			local Info = TweenInfo.new(
+				FadeLength,
+				Enum.EasingStyle.Linear,
+				Enum.EasingDirection.InOut,
+				0,
+				false,
+				0
+			)
+			local Goals = 
+			{
+				ImageTransparency = 1;
+			}
+			local Tween = TweenService:Create(Part, Info, Goals)
+			Tween:Play()
+			wait(FadeLength + 0.1)
+			ripple:Destroy()
+		end)
+	end
+	
+	frame.MouseButton1Down:Connect(function()
+		local done = false
+		local ripple = script.Circle:Clone()
+		ripple.Parent = frame
+		ripple.ZIndex = frame.ZIndex + 1
+		ripple.ImageColor3 = RippleColor
+		ripple.ImageTransparency = RippleTransparency
+		tweenInRipple(ripple)
+		frame.MouseButton1Up:Connect(function()
+			if done == false then
+				done = true
+				fadeOutRipple(ripple)
+			end
+		end)
+		wait(4);
+		done = true;
+		fadeOutRipple(ripple) -- if it doesnt detect that it was unselected
+	end)
+end
+coroutine.wrap(CNTI_fake_script)()
